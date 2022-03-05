@@ -1,0 +1,31 @@
+{
+    "name": "GCL Extension",
+    "version": "0.3",
+    "manifest_version": 2,
+    "description": "Remplace des noms de politocards sur toutes les pages internet",
+    "browser_action": {
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+      "default_popup": "options/options.html"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "options_ui": {
+      "page": "options/options.html",
+      "open_in_tab": true
+    },
+    
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["script.js"]
+      }],
+    "permissions": ["storage"]
+  }
