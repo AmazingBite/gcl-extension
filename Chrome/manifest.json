@@ -1,6 +1,6 @@
 {
     "name": "GCL Extension",
-    "version": "0.3",
+    "version": "0.4",
     "manifest_version": 3,
     "description": "Remplace des noms de politocards sur toutes les pages internet",
     "icons": {

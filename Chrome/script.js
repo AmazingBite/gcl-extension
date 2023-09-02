@@ -101,7 +101,8 @@ function first_iteration() {
 function loop_script(mutationRecord) {
     mutationRecord.forEach(mutation => {
         mutation.addedNodes.forEach(element => {
-            core_script(element)
+            if (!element.isContentEditable)
+                core_script(element)
         })
     });
 }
